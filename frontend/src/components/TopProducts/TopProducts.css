@@ -1,0 +1,131 @@
+.top-container {
+  height: 50vh;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.center1 {
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.center2 {
+  font-size: x-large;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.left, .right {
+  height: 40px;
+  width: 40px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.left:hover, .right:hover {
+  transform: scale(1.1);
+}
+
+.left img, .right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.top-items {
+  display: flex;
+  padding-left: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  width: 100%;
+}
+
+.top-items .item {
+  flex: 0 0 23%;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.top-items::-webkit-scrollbar {
+  display: none;
+}
+
+.top-items {
+  scrollbar-width: none;
+}
+
+@media  (max-width: 768px) {
+  .top-container {
+    height: auto;
+  }
+
+  .center1, .center2 {
+    font-size: medium;
+    padding-top: 5px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  .top-items .item {
+    flex: 0 0 48%;
+  }
+
+  .item {
+    width: 150px;
+    padding: 8px;
+  }
+}

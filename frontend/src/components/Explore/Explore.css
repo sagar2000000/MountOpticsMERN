@@ -1,0 +1,52 @@
+.explore-container{
+  height: 100vh;
+  
+  display: flex;
+  margin-top: 4%;
+  
+}
+
+.eyeglassses{
+  
+  width: 50%;
+ 
+  
+  margin-left: 5%;
+}
+.eyeglassses img{
+max-height: 70%;
+max-width: 100%;
+}
+.eyeglassses h1, .eyeglassses h3, .eyeglassses h4 {
+  padding-top: 25px;
+  font-family: "Poppins", Sans-serif;
+}
+
+.sunglasses{
+  
+  width: 50%;
+ 
+}
+.sunglasses img{
+  margin-top: 10%;
+  max-height: 70%;
+  max-width: 100%;
+  }
+
+  .sunglasses h1, .sunglasses h3, .sunglasses h4 {
+    padding-top: 17px;
+    font-family: "Poppins", Sans-serif;
+    
+  }
+  .sunglasses h1,.eyeglassses h1{
+    font-size: 40px;
+  }
+
+  @media (max-width:500px) {
+    .explore-container{
+     flex-wrap: wrap;
+     justify-content: center;
+      
+    }
+    
+  }

@@ -1,0 +1,161 @@
+.header-container {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  height: 50px;
+  width: 20%;
+  margin-left: 10px;
+}
+
+.logo-container img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar-items li {
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-items li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-items li:hover {
+  color: rgb(209, 130, 130);
+}
+
+
+.navbar-items li .active {
+  font-weight: bold;
+  color: #d8345f;
+ 
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user-container .icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  padding-top: 60px;
+  transition: left 0.5s ease, opacity 0.5s ease;
+  z-index: 999;
+  opacity: 0;
+}
+
+.sidebar.open {
+  left: 0;
+  opacity: 1;
+}
+
+.sidebar-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-items li {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-items li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-items li:hover {
+  color: rgb(209, 130, 130);
+  background-color: #575757;
+}
+
+
+.sidebar-items li .active {
+  font-weight: bold;
+  color: rgb(209, 130, 130);
+}
+
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-container {
+    width: 100px;
+  }
+
+  .user-container .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sidebar-items li {
+    font-size: 1rem;
+  }
+}
