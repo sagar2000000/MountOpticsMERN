@@ -57,7 +57,9 @@ const Header = () => {
         <li>
           <NavLink to="/contact-lens" activeClassName="active">Contact Lens</NavLink>
         </li>
+      
        
+      
       </ul>
 
       <div className='user-container'>
@@ -66,7 +68,7 @@ const Header = () => {
      <NavLink to="/cart" activeClassName="active"><img src={assets.cart_icon} alt="cart" className="icon" /></NavLink>
 
         
-        <img src={assets.user} alt="user" className="icon" />
+     <NavLink to="/account" activeClassName="active"><img src={assets.user} alt="user" className="icon" /></NavLink>
       </div>
     </div>
   );

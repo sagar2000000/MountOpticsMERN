@@ -1,7 +1,6 @@
 
 import Header from './components/Header/Header'
 import './App.css'
-
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import {  Route, Routes } from 'react-router-dom';
@@ -9,7 +8,12 @@ import Sunglass from './pages/SunGlass/Sunglass';
 import EyeGlass from './pages/EyeGlass/EyeGlass';
 import ContactLens from './pages/ContactLens/ContactLens';
 import ProductsDetails from './pages/ProductDetails/ProductsDetails';
+import Account from './pages/Account/Account';
 import Cart from './pages/Cart/Cart';
+import Order from './pages/Order/Order';
+import Proceed from './components/Payment/Proceed';
+import Failure from './components/Payment/Failure';
+import Success from './components/Payment/Success';
 
 function App() {
   
@@ -24,6 +28,12 @@ function App() {
       <Route path='/contact-lens' element={ <ContactLens/>}></Route>
       <Route path='/product/:name' element={<ProductsDetails/>}></Route>
       <Route path='/cart' element={<Cart/>}></Route>
+      <Route path='/proceed-to-payment' element={<Proceed/>}></Route>
+      <Route path='/payment-failure' element={<Failure/>}></Route>
+      <Route path='/payment-success' element={<Success/>}></Route>
+      
+      <Route path='/account' element={<Account/>}></Route>
+      <Route path='/orders' element={<Order/>}></Route>
      
     </Routes>
    

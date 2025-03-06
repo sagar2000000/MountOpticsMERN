@@ -6,13 +6,13 @@ const Explore = () => {
   return (
     <div className='explore-container'>
 
-      <div className="eyeglassses">
+      <div className="explore-eyeglassses">
        <img src={assets.eyeglasses} alt="" />
        <h3>Our Hottest Collections</h3>
        <h1>Eyeglasses</h1>
        <h4><Link to='/eyeglasses'>VIEW MORE</Link></h4>
       </div>
-      <div className='sunglasses'>
+      <div className='explore-sunglasses'>
        <img src={assets.sunglasses} alt="" />
        <h3>Our Hottest Collections</h3>
        <h1>Sunglasses</h1>

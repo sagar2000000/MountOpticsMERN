@@ -13,6 +13,7 @@ import cross from "./cross.png";
 import sunglasscover from "./sunglasscover.png";
 
 
+
 import store1 from "./store1.png";
 import store2 from "./store2.png";
 import store3 from "./store3.png";
@@ -35,6 +36,7 @@ import sunglass7A from "./sunglassAssets/sunglass7A.png";
 import sunglass7 from "./sunglassAssets/sunglass7.png";
 import sunglass8A from "./sunglassAssets/sunglass8A.png";
 import sunglass8 from "./sunglassAssets/sunglass8.png";
+
 
 import eyeglass1A from "./eyeglassAssets/eyeglass1A.png";
 import eyeglass1 from "./eyeglassAssets/eyeglass1.png";
@@ -69,8 +71,6 @@ export const assets = {
   sunglasscover,
 };
 
-
-
 export const stores = [
   {
     name: "New Road Outlet",
@@ -100,9 +100,10 @@ export const products = [
     FrameMaterial: "TR 90",
     TempleMaterial: "TR 90",
     FrameShape: "Square",
-    ModelNo: "MO-1008",
     FrameSize: "53-19-146",
     Framecolor: "Matte Black",
+    top: "yes",
+    stock: 12
   },
   {
     _id: 2,
@@ -114,9 +115,9 @@ export const products = [
     FrameMaterial: "TR 90",
     TempleMaterial: "TR 90",
     FrameShape: "Hexagon",
-    ModelNo: "MO-1009",
     FrameSize: "53-19-146",
     Framecolor: "Matte Black",
+    stock: 8
   },
   {
     _id: 3,
@@ -128,10 +129,12 @@ export const products = [
     FrameMaterial: "TR ",
     TempleMaterial: "TR ",
     FrameShape: "Square",
-    ModelNo: "MO-1010",
     FrameSize: "53-19-146",
     Framecolor: "Pastel Blue",
+    top:"yes",
+    stock: 0
   },
+
   {
     _id: 4,
     name: "Printed Black Polarized Sporty Sunglass",
@@ -142,9 +145,10 @@ export const products = [
     FrameMaterial: "TR ",
     TempleMaterial: "TR ",
     FrameShape: "Square",
-    ModelNo: "MO-1011",
     FrameSize: "Regular",
     Framecolor: "Printed Black",
+    top: "yes",
+    stock: 20
   },
   {
     _id: 5,
@@ -156,9 +160,9 @@ export const products = [
     FrameMaterial: "TR ",
     TempleMaterial: "TR ",
     FrameShape: "Square",
-    ModelNo: "MO-1012",
     FrameSize: "Regular",
     Framecolor: "Matte Black",
+    stock: 0
   },
   {
     _id: 6,
@@ -170,10 +174,11 @@ export const products = [
     FrameMaterial: "PC ",
     TempleMaterial: "PC ",
     FrameShape: "Square",
-    ModelNo: "MO-1013",
     FrameSize: "64-13-141",
     Framecolor: "Transparent Brown",
+    stock: 8
   },
+
   {
     _id: 7,
     name: "Black Blue Mercury Polarized Sporty Sunglass",
@@ -184,10 +189,12 @@ export const products = [
     FrameMaterial: "TR ",
     TempleMaterial: "TR ",
     FrameShape: "Wraparound",
-    ModelNo: "MO-1014",
     FrameSize: "Regular",
     Framecolor: "Blue Mercury",
+    top: "yes",
+    stock: 8
   },
+
   {
     _id: 8,
     name: "Green Black Square Wooden Sunglass",
@@ -198,9 +205,9 @@ export const products = [
     FrameMaterial: "TR",
     TempleMaterial: "Wooden",
     FrameShape: "Square",
-    ModelNo: "MO-1015",
     FrameSize: "53-19-146",
     Framecolor: "Green Black",
+    stock: 8
   },
   {
     _id: 9,
@@ -212,9 +219,9 @@ export const products = [
     FrameMaterial: "Acetate",
     TempleMaterial: "TR90",
     FrameShape: "Square",
-    ModelNo: "MO-2008",
     FrameSize: "53-19-146",
     Framecolor: "Transparent Grey",
+    stock: 8
   },
   {
     _id: 10,
@@ -226,9 +233,9 @@ export const products = [
     FrameMaterial: "TR90+Metal",
     TempleMaterial: "Metal",
     FrameShape: "Hexagon",
-    ModelNo: "MO-2009",
     FrameSize: "56-11-149",
     Framecolor: "Shining Black",
+    stock: 8
   },
   {
     _id: 11,
@@ -240,10 +247,11 @@ export const products = [
     FrameMaterial: "Acetate",
     TempleMaterial: "Acetate (inside Metal Rod)",
     FrameShape: "Square",
-    ModelNo: "MO-2010",
     FrameSize: "Regular",
     Framecolor: "Mix Black",
+    stock: 8
   },
+
   {
     _id: 12,
     name: "Rimless Matte Black Eyeglass",
@@ -254,10 +262,12 @@ export const products = [
     FrameMaterial: "Metal+TR",
     TempleMaterial: "TR",
     FrameShape: "Square Rimless",
-    ModelNo: "MO-2011",
     FrameSize: "53-19-143",
     Framecolor: "Matte Black",
+    top: "yes",
+    stock: 8
   },
+
   {
     _id: 13,
     name: "Matte Gold Brown Metal Eyeglass",
@@ -268,9 +278,10 @@ export const products = [
     FrameMaterial: "Metal",
     TempleMaterial: "Metal",
     FrameShape: "Square",
-    ModelNo: "MO-2012",
     FrameSize: "55-19-140",
     Framecolor: "Matte Gold Brown",
+    top: "yes",
+    stock: 8
   },
   {
     _id: 14,
@@ -281,8 +292,8 @@ export const products = [
     BaseCurve: "8.6 mm",
     Diameter: "14.20mm",
     WaterContent: "59%",
-    ModelNo: "MO-4008",
     Packaging: "6 pieces of Lenses per box",
+    stock: 8
   },
   {
     _id: 15,
@@ -293,118 +304,8 @@ export const products = [
     BaseCurve: "8.6 mm",
     Diameter: "14.20mm",
     WaterContent: "59%",
-    ModelNo: "MO-4009",
     Packaging: "6 pieces of Lenses per box",
-  },
-  {
-    _id: 16,
-    name: "Proclear Omafilcon B Contact Lens",
-    price: 3200,
-    image: lens3,
-    category: "lens",
-    BaseCurve: "8.6 mm",
-    Diameter: "14.20mm",
-    WaterContent: "62%",
-    ModelNo: "MO-4010",
-    Packaging: "6 pieces of Lenses per box",
-  },
-
-
-
-  {
-    _id: 1,
-    name: "Matte Black Sporty Sunglass",
-    price: 2100,
-    image: sunglass1A,
-    imageB: sunglass1,
-    category: "sunglass",
-    FrameMaterial: "TR 90",
-    TempleMaterial: "TR 90",
-    FrameShape: "Square",
-    ModelNo: "MO-1008",
-    FrameSize: "53-19-146",
-    Framecolor: "Matte Black",
-    top:"yes"
-  },
-
-
-  {
-    _id: 13,
-    name: "Matte Gold Brown Metal Eyeglass",
-    price: 2150,
-    image: eyeglass5A,
-    imageB: eyeglass5,
-    category: "eyeglass",
-    FrameMaterial: "Metal",
-    TempleMaterial: "Metal",
-    FrameShape: "Square",
-    ModelNo: "MO-2012",
-    FrameSize: "55-19-140",
-    Framecolor: "Matte Gold Brown",
-    top:"yes",
-  },
-
-  {
-    _id: 7,
-    name: "Black Blue Mercury Polarized Sporty Sunglass",
-    price: 2550,
-    image: sunglass7A,
-    imageB: sunglass7,
-    category: "sunglass",
-    FrameMaterial: "TR ",
-    TempleMaterial: "TR ",
-    FrameShape: "Wraparound",
-    ModelNo: "MO-1014",
-    FrameSize: "Regular",
-    Framecolor: "Blue Mercury",
-    top:"yes",
-  },
-
-
-  {
-    _id: 12,
-    name: "Rimless Matte Black Eyeglass",
-    price: 1620,
-    image: eyeglass4A,
-    imageB: eyeglass4,
-    category: "eyeglass",
-    FrameMaterial: "Metal+TR",
-    TempleMaterial: "TR",
-    FrameShape: "Square Rimless",
-    ModelNo: "MO-2011",
-    FrameSize: "53-19-143",
-    Framecolor: "Matte Black",
-    top:"yes",
-  },
-  {
-    _id: 4,
-    name: "Printed Black Polarized Sporty Sunglass",
-    price: 2100,
-    image: sunglass4A,
-    imageB: sunglass4,
-    category: "sunglass",
-    FrameMaterial: "TR ",
-    TempleMaterial: "TR ",
-    FrameShape: "Square",
-    ModelNo: "MO-1011",
-    FrameSize: "Regular",
-    Framecolor: "Printed Black",
-    top:"yes",
-  },
-  {
-    _id: 3,
-    name: "Pastel Blue Polarized",
-    price: 2350,
-    image: sunglass3A,
-    imageB: sunglass3,
-    category: "sunglass",
-    FrameMaterial: "TR ",
-    TempleMaterial: "TR ",
-    FrameShape: "Square",
-    ModelNo: "MO-1010",
-    FrameSize: "53-19-146",
-    Framecolor: "Pastel Blue",
-    top:"yes",
+    stock: 8
   },
   {
     _id: 16,
@@ -416,8 +317,12 @@ export const products = [
     Diameter: "14.20mm",
     WaterContent: "62%",
     Packaging: "6 pieces of Lenses per box",
-    top:"yes",
-    ModelNo: "MO-4010",
+    top: "yes",
+    stock: 8
+
   },
- 
 ];
+
+
+
+

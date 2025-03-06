@@ -73,6 +73,21 @@
   width: 100%;
 }
 
+
+#stock {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: rgb(128, 41, 0);
+}
+
+.stock-large {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: green;
+}
+
+
 .cart-div button {
   height: 40px;
   width: 100%;

@@ -1,22 +1,60 @@
-.store-container{
+.store-container {
   margin-top: 5%;
   display: flex;
-
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-
-.store{
-  height: 80vh;
+.store {
+  height: 60vh; /* Adjusted height */
   width: 30%;
-  margin-left: 20px;
- 
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.store img{
- max-width: 100%;
- max-height: 100%;
- 
+
+.store img {
+  width: 100%;
+  height: 80%; /* Reduced to make room for text */
+  object-fit: cover;
 }
-.location{
-  font-size: 14px;
+
+.location, .center1 {
+  font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.center1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.center2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .store-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store {
+    width: 80%;
+    height: 50vh; /* Adjusted for smaller screens */
+  }
+
+  .store img {
+    height: 70%;
+  }
 }

@@ -1,52 +1,69 @@
-.explore-container{
-  height: 100vh;
-  
+.explore-container {
+  min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 4%;
-  
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 
-.eyeglassses{
-  
-  width: 50%;
- 
-  
-  margin-left: 5%;
-}
-.eyeglassses img{
-max-height: 70%;
-max-width: 100%;
-}
-.eyeglassses h1, .eyeglassses h3, .eyeglassses h4 {
-  padding-top: 25px;
-  font-family: "Poppins", Sans-serif;
+.explore-eyeglassses, .explore-sunglasses {
+  flex: 1 1 45%;
 }
 
-.sunglasses{
-  
-  width: 50%;
- 
+.explore-sunglasses {
+  margin-top: 100px;
 }
-.sunglasses img{
-  margin-top: 10%;
+
+.explore-eyeglassses img, .explore-sunglasses img {
   max-height: 70%;
   max-width: 100%;
+}
+
+
+.explore-eyeglassses h1, .explore-eyeglassses h4, 
+.explore-sunglasses h1, .explore-sunglasses h4 {
+  text-align: center;
+}
+
+.explore-eyeglassses h3, .explore-sunglasses h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.explore-sunglasses h1, .explore-eyeglassses h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .sunglasses h1, .sunglasses h3, .sunglasses h4 {
-    padding-top: 17px;
-    font-family: "Poppins", Sans-serif;
-    
-  }
-  .sunglasses h1,.eyeglassses h1{
-    font-size: 40px;
+  .explore-eyeglassses, .explore-sunglasses {
+    width: 90%;
+    margin: 20px 0;
   }
 
-  @media (max-width:500px) {
-    .explore-container{
-     flex-wrap: wrap;
-     justify-content: center;
-      
-    }
-    
+  .explore-sunglasses {
+    margin-top: 60px;
   }
+}
+
+@media (max-width: 500px) {
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-eyeglassses, .explore-sunglasses {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .explore-sunglasses {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,68 @@
+
+.proceed-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin-top:40px;
+}
+.delivery-details, .summary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.delivery-details {
+  flex: 0.7;
+}
+.summary {
+  flex: 0.3;
+  margin-left: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.input-field, .select-field, .place-order-button, .change-cart-button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.place-order-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.place-order-button:hover {
+  background-color: #333;
+}
+.change-cart-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.change-cart-button:hover {
+  background-color: #f0f0f0;
+}
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.payment-methods {
+  background-color: #e6f7e6; /* Light green background */
+  padding: 30px;
+  border-radius: 8px;
+  
+}

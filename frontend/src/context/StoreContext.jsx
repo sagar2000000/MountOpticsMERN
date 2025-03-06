@@ -5,46 +5,38 @@ export const StoreContext = createContext(null);
 
 function StoreContextProvider(props) {
   const [cartData, setCartData] = useState({});
-
   
-  const addToCart = (ModelNo) => {
-    if (!cartData[ModelNo]) {
-      setCartData((prev) => ({ ...prev, [ModelNo]: 1 }));
+  
+  const addToCart = (_id) => {
+    if (!cartData[_id]) {
+      setCartData((prev) => ({ ...prev, [_id]: 1 }));
     } else {
-      setCartData((prev) => ({ ...prev, [ModelNo]: prev[ModelNo] + 1 }));
+      setCartData((prev) => ({ ...prev, [_id]: prev[_id] + 1 }));
     }
-
+    console.log(cartData)
   };
 
-  const removeFromCart = (ModelNo) => {
-    if (cartData[ModelNo]>0) {
-      setCartData((prev) => ({ ...prev, [ModelNo]: prev[ModelNo] - 1 }));
+  const removeFromCart = (_id) => {
+    if (cartData[_id] > 0) {
+      setCartData((prev) => ({ ...prev, [_id]: prev[_id] - 1 }));
     }
-   
-
   };
 
- 
   const getTotalAmount = () => {
-    let totalAmount= 0
-  for (const i in cartData){
-    console.log(i)
-    if (cartData[i]>0){
-      products.map((product)=>{
-        if(product.ModelNo==i){
-         let price = product.price;
-         totalAmount+=price*cartData[i]
-        }
-      })
-    
-
+    let totalAmount = 0;
+    for (const i in cartData) {
+      console.log(i);
+      if (cartData[i] > 0) {
+        products.map((product) => {
+          if (product._id == i) {
+            let price = product.price;
+            totalAmount += price * cartData[i];
+          }
+        });
+      }
     }
-
-  }
-  return totalAmount;
+    return totalAmount;
   };
-
-
 
   const contextValue = {
     cartData,
